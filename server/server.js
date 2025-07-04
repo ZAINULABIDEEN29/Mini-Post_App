@@ -13,6 +13,13 @@ app.use(express.urlencoded({extended:true}))
 
 app.use('/api/v1',postRouter)
 
+app.get("/",(req,res,next)=>{
+    res.send({
+        activeStatus:true,
+        error:false
+    })
+})
+
 app.listen(3000,()=>{
     connectDB();
     console.log("Port Running on http://localhost:3000")
