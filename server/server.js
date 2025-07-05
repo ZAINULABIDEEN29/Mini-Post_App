@@ -6,7 +6,7 @@ import postRouter from "./routes/post.route.js"
 const app =  express();
 
 app.use(cors({
-    origin:['http://localhost:5173']
+    origin:['http://localhost:5173','https://mini-post-app-f6ui-oxag1luyh-zains-projects-9ee060a9.vercel.app/']
 }));
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
